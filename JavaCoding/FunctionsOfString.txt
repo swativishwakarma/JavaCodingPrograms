@@ -1,0 +1,129 @@
+1. length()
+Description: Returns the length (number of characters) of the string.
+Syntax: int length()
+Example:
+String str = "Hello";
+int length = str.length();  // Output: 5
+
+2. charAt(int index)
+Description: Returns the character at the specified index.
+Syntax: char charAt(int index)
+Example:
+String str = "Hello";
+char ch = str.charAt(1);  // Output: 'e'
+
+3. equals(Object obj)
+Description: Compares the string to the specified object (case-sensitive).
+Syntax: boolean equals(Object obj)
+Example:
+String str1 = "Hello";
+String str2 = "hello";
+boolean isEqual = str1.equals(str2);  // Output: false
+
+4. equalsIgnoreCase(String anotherString)
+Description: Compares the string to the specified string (case-insensitive).
+Syntax: boolean equalsIgnoreCase(String anotherString)
+Example:
+String str1 = "Hello";
+String str2 = "hello";
+boolean isEqual = str1.equalsIgnoreCase(str2);  // Output: true
+
+5. compareTo(String anotherString)
+Description: Compares two strings lexicographically.
+Syntax: int compareTo(String anotherString)
+Example:
+String str1 = "Apple";
+String str2 = "Banana";
+int result = str1.compareTo(str2);  // Output: Negative number (Apple < Banana)
+
+6. compareToIgnoreCase(String anotherString)
+Description: Compares two strings lexicographically, ignoring case.
+Syntax: int compareToIgnoreCase(String anotherString)
+Example:
+String str1 = "apple";
+String str2 = "Apple";
+int result = str1.compareToIgnoreCase(str2);  // Output: 0 (equal ignoring case)
+
+7. contains(CharSequence sequence)
+Description: Returns true if the string contains the specified sequence of characters.
+Syntax: boolean contains(CharSequence sequence)
+Example:
+String str = "Hello, World!";
+boolean contains = str.contains("World");  // Output: true
+
+8. startsWith(String prefix)
+Description: Checks if the string starts with the specified prefix.
+Syntax: boolean startsWith(String prefix)
+Example:
+String str = "Hello, World!";
+boolean starts = str.startsWith("Hello");  // Output: true
+
+9. endsWith(String suffix)
+Description: Checks if the string ends with the specified suffix.
+Syntax: boolean endsWith(String suffix)
+Example:
+String str = "Hello, World!";
+boolean ends = str.endsWith("World!");  // Output: true
+
+10. substring(int start)
+Description: Returns a new string that is a substring of the original string, starting from the specified index.
+Syntax: String substring(int start)
+Example:
+String str = "Hello, World!";
+String subStr = str.substring(7);  // Output: "World!"
+
+11. substring(int start, int end)
+Description: Returns a new string that is a substring of the original string from the specified start index to the end index.
+Syntax: String substring(int start, int end)
+Example:
+String str = "Hello, World!";
+String subStr = str.substring(0, 5);  // Output: "Hello"
+
+12. toLowerCase()
+Description: Converts all characters in the string to lowercase.
+Syntax: String toLowerCase()
+Example:
+String str = "HELLO";
+String lower = str.toLowerCase();  // Output: "hello"
+
+13. toUpperCase()
+Description: Converts all characters in the string to uppercase.
+Syntax: String toUpperCase()
+Example:
+String str = "hello";
+String upper = str.toUpperCase();  // Output: "HELLO"
+
+14. replace(char oldChar, char newChar)
+Description: Replaces all occurrences of the old character with the new character.
+Syntax: String replace(char oldChar, char newChar)
+Example:
+String str = "Hello, World!";
+String replaced = str.replace('o', 'O');  // Output: "HellO, WOrld!"
+
+15. split(String regex)
+Description: Splits the string into an array of substrings based on the specified delimiter (regular expression).
+Syntax: String[] split(String regex)
+Example:
+String str = "apple,banana,cherry";
+String[] parts = str.split(",");// Output: ["apple", "banana", "cherry"]
+
+16. toCharArray()
+Description: Converts the string into an array of characters.
+Syntax: char[] toCharArray()
+Example:
+String str = "Hello";
+char[] chars = str.toCharArray();  // Output: ['H', 'e', 'l', 'l', 'o']
+
+17. isEmpty()
+Description: Checks if the string is empty (i.e., its length is 0).
+Syntax: boolean isEmpty()
+Example:
+String str = "";
+boolean isEmpty = str.isEmpty();  // Output: true
+
+18. join(CharSequence delimiter, CharSequence... elements)
+Description: Joins the elements into a single string, separated by the given delimiter.
+Syntax: String join(CharSequence delimiter, CharSequence... elements)
+Example:
+String str = String.join(", ", "apple", "banana", "cherry");// Output: "apple, banana, cherry"
+
